@@ -2,6 +2,7 @@
 name = "language_data"
 description = "Supplementary data about languages used by the langcodes module"
 authors = [{name = "Elia Robyn Speer", email = "rspeer@arborelia.net"}]
+maintainers = [{name = "Georg Krause", email = "mail@georg-krause.net"}]
 readme = "README.md"
 dynamic = ["version"]
 classifiers = [
@@ -18,9 +19,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/rspeer/language_data"
-Repository = "https://github.com/rspeer/language_data"
-Issues = "https://github.com/rspeer/language_data/issues"
+Homepage = "https://github.com/georgkrause/language_data"
+Repository = "https://github.com/georgkrause/language_data"
+Issues = "https://github.com/georgkrause/language_data/issues"
 
 [tool.poetry.dependencies]
 python = ">= 3.6"
