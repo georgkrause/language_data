@@ -9,8 +9,6 @@ classifiers = [
   "Development Status :: 5 - Stable",
   "License :: OSI Approved :: MIT License",
   "Programming Language :: Python :: 3",
-  "Programming Language :: Python :: 3.6",
-  "Programming Language :: Python :: 3.7",
   "Programming Language :: Python :: 3.8",
   "Programming Language :: Python :: 3.9",
   "Programming Language :: Python :: 3.10",
@@ -24,7 +22,7 @@ Repository = "https://github.com/georgkrause/language_data"
 Issues = "https://github.com/georgkrause/language_data/issues"
 
 [tool.poetry.dependencies]
-python = ">= 3.6"
+python = ">= 3.8"
 marisa-trie = "^0.7.7"
 
 [build-system]
