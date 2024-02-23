@@ -1,20 +1,33 @@
-[tool.poetry]
+[project]
 name = "language_data"
-version = "1.1"
 description = "Supplementary data about languages used by the langcodes module"
-authors = ["Elia Robyn Speer <rspeer@arborelia.net>"]
-license = "MIT"
+authors = [{name = "Elia Robyn Speer", email = "rspeer@arborelia.net"}]
 readme = "README.md"
-homepage = "https://github.com/rspeer/language_data"
-include = ["language_data/data", "CHANGELOG.md"]
-exclude = ["language_data/data/cldr", "language_data/data/cldr-json"]
+dynamic = ["version"]
+classifiers = [
+  "Development Status :: 5 - Stable",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/rspeer/language_data"
+Repository = "https://github.com/rspeer/language_data"
+Issues = "https://github.com/rspeer/language_data/issues"
 
 [tool.poetry.dependencies]
 python = ">= 3.6"
 marisa-trie = "^0.7.7"
 
-[tool.poetry.dev-dependencies]
-
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["setuptools>=60", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
