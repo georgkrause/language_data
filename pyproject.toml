@@ -15,15 +15,20 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
 ]
+dependencies = [
+  "marisa-trie >= 0.7.7"
+]
+
+[project.optional-dependencies]
+build = [
+  'build',
+  'twine'
+]
 
 [project.urls]
 Homepage = "https://github.com/georgkrause/language_data"
 Repository = "https://github.com/georgkrause/language_data"
 Issues = "https://github.com/georgkrause/language_data/issues"
-
-[tool.poetry.dependencies]
-python = ">= 3.8"
-marisa-trie = "^0.7.7"
 
 [build-system]
 requires = ["setuptools>=60", "setuptools-scm>=8.0"]
