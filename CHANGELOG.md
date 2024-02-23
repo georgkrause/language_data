@@ -1,4 +1,9 @@
-# Version 1.1 (2021-??-??)
+# Version 1.2.0 (2024-??-??)
+
+- The package is now maintained by georgkrause
+- Bump minimum required python version to 3.8
+
+# Version 1.1 (2021-11-10)
 
 - Updated to CLDR v40.
 - Norwegian Bokmål now prefers the language code 'no', not 'nb', following a change made throughout Unicode CLDR.
