@@ -9,3 +9,5 @@ cldr-localenames-*
 cldr
 cldr-json
 .hypothesis
+.venv/
+junit/
