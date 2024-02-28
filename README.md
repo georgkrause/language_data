@@ -41,3 +41,10 @@ These are all extracted from the Unicode [CLDR][] data package, version 40, plus
 `language_data` is usually installed as a dependency of `langcodes`, and doesn't make much sense without it. You can `pip install language_data` anyway if you want.
 
 To install the `language_data` package in editable mode, run `poetry install` in the package root. (This is the equivalent of `pip install -e .`, which will hopefully become compatible again soon via PEP 660.)
+
+## Update CLDR data
+
+* Make sure submodules are up to date: `git submodule update --init`
+* Download CLDR data from https://cldr.unicode.org/index/downloads/
+* Unzip and copy `supplemental/languageInfo.xml` and `supplemental/supplementalData.xml` into `language_data/data`
+* `cd language_data && ../.venv/bin/python build_data.py`
