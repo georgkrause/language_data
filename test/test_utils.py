@@ -5,4 +5,4 @@ def test_data_filename():
     test = data_filename("test")
     cwd = os.getcwd()
 
-    assert test == f"{cwd}/language_data/data/test"
+    assert str(test) == f"{cwd}/language_data/data/test"
